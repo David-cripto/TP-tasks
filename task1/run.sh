@@ -7,5 +7,5 @@ name_archive=$4
 
 mkdir $name_folder
 find $way -name "*.$expansion" -exec cp --backup=numbered {} $name_folder \;
-tar -czvf $name_archive $name_folder
+tar -czf $name_archive $name_folder
 echo "done"
