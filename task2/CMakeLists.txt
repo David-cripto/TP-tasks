@@ -17,12 +17,12 @@ execute_process(
 )
 
 add_executable(${PROJECT_NAME} ${CPP})
-add_executable(Test ${TEST})
+add_executable(CTest ${TEST})
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/B)
 add_subdirectory(${PROJECT_SOURCE_DIR}/googletest-master)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
-target_include_directories(Test PUBLIC ${PROJECT_SOURCE_DIR})
+target_include_directories(CTest PUBLIC ${PROJECT_SOURCE_DIR})
 target_link_libraries(${PROJECT_NAME} lib)
-target_link_libraries(Test gtest)
+target_link_libraries(CTest gtest)
