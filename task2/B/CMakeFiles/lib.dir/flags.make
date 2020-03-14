@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -Dlib_EXPORTS
 
-CXX_INCLUDES = -I/home/david/TP_task2/A -I/home/david/TP_task2/B 
+CXX_INCLUDES = -I/home/david/TP_task2/A -I/home/david/TP_task2/B -I/home/david/TP_task2/googletest-master 
 
