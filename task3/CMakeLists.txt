@@ -16,7 +16,7 @@ add_subdirectory(src)
 
 set(CMAKE_INSTALL_RPATH ${CMAKE_INSTALL_PREFIX}/lib)
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
-set(TARGET MainLib PROPERTY PUBLIC_HEADER ${SimpleLibrary_SOURCE_DIR}/include/buffer.h)
+set_property(TARGET MainLib PROPERTY PUBLIC_HEADER ${SimpleLibrary_SOURCE_DIR}/include/buffer.h)
 
 add_executable(Main main.cpp)
 add_executable(MainLib main_lib.cpp)
