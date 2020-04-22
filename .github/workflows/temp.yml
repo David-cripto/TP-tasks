@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ task4 ]
   pull_request:
-    branches: [ master ]
+    branches: [ task4 ]
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
         mkdir build
         cd build
         export GOOGLE_TEST_DIR=googletest
-        cmake -DCMAKE_INSTALL_PREFIX=/home/runner/work/TP/TP ..
+        cmake -DCMAKE_INSTALL_PREFIX=/home/runner/work/Temp/Temp ..
         make
         make install
 
@@ -33,8 +33,8 @@ jobs:
         report-path: "report.xml"
         working-directory: "task4/"
 
-    - name: UploadArtifacts
+    - name: UploadArtifact
       uses: actions/upload-artifact@v1
       with:
         name: Distributive
-        path: /home/runner/work/TP/TP/exe
+        path: /home/runner/work/Temp/Temp/exe
