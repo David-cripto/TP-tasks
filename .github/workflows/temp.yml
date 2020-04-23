@@ -31,7 +31,7 @@ jobs:
       with:
         exec-path: "bin/CTestExe"
         report-path: "report.xml"
-        working-directory: "task4"
+        working-directory: "task4/"
 
     - name: UploadArtifacts
       uses: actions/upload-artifact@v1
